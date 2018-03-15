@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Handlee');
+
+body {
+  margin: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#back {
+  position: absolute;
+  top:10px;
+  left: 20px;
+}
+
+.mainA {
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-image: url("../images/arduinoBS.jpg"); */
+}
+
+.mainA h1{
+  margin-top: 0;
+  font-family: 'Arsenal', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  padding: 20px;
+}
+
+.mainA .menu {
+  height: auto;
+//  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.tabella {
+	background: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 200px;
+}
+
+#puntiForza {
+	max-width: 1400px;
+	width:100%;
+	margin: auto;
+	overflow-x:auto;
+}
+
+#puntiForza td {
+	text-align: center;
+
+}
+
+#puntiForza img {
+	overflow-wrap: break-word;
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#puntiForza td {
+	margin-top:0px;
+	font-weight: bolder;
+	font-size: 30px;
+  color: #040e44;
+  font-family: 'Arsenal', sans-serif;
+}
+
+#puntiForza p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#puntiForza td p.nomi {
+  margin-top: 0px;
+  color:  #f78d31;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+#puntiForza hr{
+	background-color: #db0404;
+	border: 1px solid #db0404;
+	width: 52%;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+}
+
+#puntiForza td:hover  hr {
+	width: 65%;
+
+}
+
+#topBar {
+  background-color:#040e44;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  height: 50px;
+}
+
+#topBar button {
+  float: right;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#topBar button div {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 8px;
+}
+
+#topBar h1 {
+  margin: 0;
+  float: left;
+  padding: 0;
+  font-size: 150%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#menuResponsive {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top:0;
+  transition: all 2s linear;
+}
+
+#menuResponsive ul{list-style: none}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #puntiForza td{
+			display: block;
+			width: 100%;
+      vertical-align: middle;
+    }
+
+    #puntiForza img {
+    	width: 40%;
+    }
+
+    .tabella {
+      background-color: transparent;
+    }
+
+    #myVideo {
+      display: none;
+    }
+
+    #topBar {
+      display: block;
+    }
+
+    #menuResponsive.menuR {
+      display: none;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+
+    #menuResponsive.responsive {
+      display: block;
+      top:40px;
+      background-color:#040e44;
+    }
+    #menuResponsive.responsive li{
+      margin-top: 20px;
+    }
+    #menuResponsive.responsive a{
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+
+}

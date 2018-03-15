@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Handlee');
+
+body {
+  font-family: 'Indie Flower', cursive;
+  font-family: calibri;
+  margin: 0;
+}
+
+.main, .parallax1 {
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  z-index: 2;
+  background-image: url("../images/ioMenozBlurS.jpg");
+}
+
+.main  #alternanza {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 7px;
+  border-radius: 2px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  font-family:calibri;
+  margin-top: 60%;
+  font-size: 90%;
+}
+
+.main #alternanza:hover {
+  background-color: #70a3f4;
+}
+
+.ale {
+  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+}
+
+.ale h1 {
+  font-weight: lighter;
+  font-size: 80px;
+  margin-top: 0px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  float:left;
+  font-family: 'Handlee', cursive;
+}
+
+.ale img {
+  width: 20%;
+  border-radius: 2px;
+  box-shadow: 0px 0px 28px #000;
+  float: left;
+  margin-top: 200px;
+  min-width: 200px;
+}
+
+.ale p {
+  font-family: 'Arsenal', sans-serif;
+  clear: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main ul {
+  list-style: none;
+  width: 100%;
+  float: right;
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+.main ul li {
+  float: right;
+  width: 40px;
+  margin: 20px;
+  height: 40px;
+}
+
+#contatti {
+  margin-right: 80px;
+}
+
+#contatti p {
+  font-size: 30px;
+  margin: 0;
+  color: white;
+  font-family: 'Arsenal', sans-serif;
+}
+
+.main ul li img {
+  width: 100%;
+}
+
+.ale .presentazione {
+  float: left;
+  margin-left: 2%;
+  width: 40%;
+  height: 90%;
+  overflow: visible;
+
+}
+
+.parallax {
+    /* The image used */
+
+}
+
+.parallax1 {
+    /* The image used */
+  background-image: url("../images/paper-3187096_1920.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+  .main{
+    margin:0;
+  }
+  .ale {
+    border: 2px solid transparent;
+    width: 90%;
+  }
+  .ale img{
+     float: none;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 20px;
+  }
+  .ale h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+    float: none;
+    margin-bottom: 0px;
+  }
+
+  .ale p {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .ale .presentazione {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  a#alternanza {
+    width: 10%;
+  }
+}
