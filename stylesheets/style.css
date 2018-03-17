@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Arsenal|Handlee');
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
 body {
   font-family: 'Indie Flower', cursive;
@@ -7,7 +8,7 @@ body {
   margin: 0;
 }
 
-.main, .parallax1 {
+.main{
   height: 800px;
   background-attachment: fixed;
   background-position: center;
@@ -18,6 +19,7 @@ body {
 .main {
   z-index: 2;
   background-image: url("../images/ioMenozBlurS.jpg");
+  position: relative;
 }
 
 .main  #alternanza {
@@ -73,9 +75,11 @@ body {
   list-style: none;
   width: 100%;
   float: right;
-  margin-top: 120px;
   background-color: rgba(255, 255, 255, 0.2);
-
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin:0;
 }
 .main ul li {
   float: right;
@@ -108,15 +112,27 @@ body {
 
 }
 
-.parallax {
-    /* The image used */
 
+#tornaSu {
+  text-align: center;
+  border-radius: 3px;
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+  background-color: #242729;
+  width: 38px;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
-.parallax1 {
-    /* The image used */
-  background-image: url("../images/paper-3187096_1920.jpg");
+#tornaSu:hover {
+	background-color: #db0404;
 }
+
 
 @media only screen and (max-width: 768px) {
   .main{
@@ -132,7 +148,7 @@ body {
      margin-left: auto;
      margin-right: auto;
      width: 50%;
-     margin-top: 20px;
+     margin-top: 70px;
   }
   .ale h1 {
     margin-top: 20px;
@@ -152,7 +168,12 @@ body {
     text-align: center;
     margin: 0;
   }
-
+  .main ul .container ul {
+    margin: 0;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  #contatti {display: none;}
   a#alternanza {
     width: 10%;
   }

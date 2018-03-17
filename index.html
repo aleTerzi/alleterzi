@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel='stylesheet' href="../stylesheets/style.css">
-    <link rel='stylesheet' href="../stylesheets/alternanza.css">
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
-    <title>alternanza 2017-2018</title>
+    <title>Terzi Alessandro - sito web</title>
+    <link rel='stylesheet' href="./stylesheets/style.css">
+    <link rel='stylesheet' href="./stylesheets/alternanza.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
         // Add smooth scrolling to all links
-        $("#tornaSu").on('click', function(event) {
+        $("#alternanza").on('click', function(event) {
 
           // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
@@ -24,7 +24,7 @@
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-              scrollTop: $("#back").offset().top
+              scrollTop: $("#puntiForza").offset().top
             }, 800, function(){
 
               // Add hash (#) to URL when done scrolling (default click behavior)
@@ -36,74 +36,84 @@
     </script>
   </head>
   <body>
-    <div class="mainA">
 
+    <div class="main">
+      <div class="ale">
+        <div class="immagine">
+          <img src="./images/profilo.jpg" alt="">
+        </div>
+
+        <div class="presentazione">
+          <h1>Ciao!</h1>
+          <p>
+            sono Alessandro,il ragazzo a sinistra, Benvenuti nel mio personalissimo sito
+          </p>
+          <p>
+            <a href="#puntiForza" id="alternanza">alternanza 2017-2018 <span>></span></a>
+          </p>
+
+        </div>
+      </div>
+      <ul>
+
+        <li>
+          <a href="https://twitter.com/terzi333">
+            <img src="./images/twitter.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_alleterzi_/">
+            <img src="./images/insta.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aleTerzi/"><img src="./images/Git_icon.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://github.com/aleTerzi/"><img src="./images/Git_icon.png" alt=""></a>
+        </li>
+        <li id="contatti">
+          <p>
+            Contatti:
+          </p>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="mainA">
+      <!--
       <video autoplay muted loop id="myVideo">
         <source src="../images/arduino.mp4" type="video/mp4">
-      </video>
-      <div class="menu">
-        <h1 id="back"><a href="index.html"><</a></h1>
-        <h1>Alternanza scuola lavoro 2017/2018</h1>
-      </div>
+      </video>1-->
       <div id="topBar">
         <h1>Alternanza 2017/2018</h1>
-        <button type="button" id="btnResp" onclick="responsivness()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
-        <script type="text/javascript">
-          function responsivness() {
-            var menu = document.getElementById("menuResponsive");
-            if (menu.className === "menuR") {
-                menu.className += " responsive";
-            } else {
-                menu.className = "menuR";
-            }
-          };
-        </script>
 
-      </div>
-      <div id="menuResponsive" class="menuR">
-        <ul>
-          <li>
-            <a href="#">Progetto Arduino</a>
-          </li>
-          <li>
-            <a href="#">trattamento dati personali</a>
-          </li>
-          <li>
-            <a href="#">Richieste a Server con C#</a>
-          </li>
-          <li>
-            <a href="#">Progetto Nonno Bit</a>
-          </li>
-        </ul>
       </div>
 
       <div class="tabella">
         <table id="puntiForza">
           <tr>
             <td>
-              <img src="../images/arduinoP.png" alt="basi">
+              <a href="./views/arduino.html"><img src="./images/arduinoP.png" alt="basi"></a>
               <p>Progetto Arduino</p>
               <hr>
               <p class="nomi">Nicola Carpanoni</p>
             </td>
             <td>
-              <img src="../images/privacyP.png" alt="web">
+              <img src="./images/privacyP.png" alt="web">
               <p>trattamento dati personali</p>
               <hr>
               <p class="nomi">Roberto Ghinolfi</p>
             </td>
             <td>
-              <img src="../images/csharpP.png" alt="mobile">
+              <img src="./images/csharpP.png" alt="mobile">
               <p>Richieste a Server con C#</p>
               <hr>
               <p class="nomi">Blulink s.r.l</p>
             </td>
             <td>
-              <img src="../images/nonnoBitP.png" alt="mobile">
+              <img src="./images/nonnoBitP.png" alt="mobile">
               <p>Progetto Nonno Bit</p>
               <hr>
               <p class="nomi">Apprendi anche da mobile</p>
@@ -112,9 +122,6 @@
         </table>
     </div>
     </div>
-    <div class="parallax1" id="arduino">
-      <h1>Arduino</h1>
-    </div>
-    <a href="#pTitle" id="tornaSu">^</a>
   </body>
+
 </html>

@@ -20,7 +20,7 @@ body {
 }
 
 .mainA {
-  height: 900px;
+  height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,6 +158,7 @@ body {
 
     .tabella {
       background-color: transparent;
+      margin-top: 0;
     }
 
     #myVideo {
