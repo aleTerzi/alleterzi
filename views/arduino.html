@@ -5,22 +5,53 @@
 <title>Progetto Arduino</title>
   <link rel='stylesheet' href="../stylesheets/style.css">
   <link rel='stylesheet' href="../stylesheets/articoli.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("#tornaSu").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $("#social").offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
 </head>
 <body>
 <div class="container">
   <div class="div1" id="d1">
     <div class="bar">
-      <ul id="menu">
-        <li id="back">
-          <a href="../index.html"><h1> &lt </h1></a>
-        </li>
-        <li>
-          <a href="#"><h1 id="titolo">PROGETTO ARDUINO</h1></a>
-        </li>
-        <li id="img">
-          <a href="http://pascal.gov.it/"><img src="../images/shell.png" width="30px"></a>
-        </li>
-      </ul>
+      <div class="fixedMenu">
+        <ul id="menu">
+          <li id="back">
+            <a href="../index.html"><h1> &lt </h1></a>
+          </li>
+          <li>
+            <a href="#"><h1 id="titolo">PROGETTO ARDUINO</h1></a>
+          </li>
+          <li id="img">
+            <a href="http://pascal.gov.it/"><img src="../images/shell.png" width="30px"></a>
+          </li>
+        </ul>
+      </div>
+
       <hr>
       <ul id="social">
 
@@ -78,7 +109,151 @@
           molto interessante.
         </p>
       </div>
+
+      <div class="hh">
+        <h2>Il Prodotto</h2>
+      </div>
+
+      <div class="pp">
+        <p>
+          il nostro prodotto si chiamava Boxshore e implementava oltre ai 2
+          sensori oblligatori anche quello dell’umidita’ per monitorare lo
+          stato di idratazione della pianta. Qual’ora fosse andato sotto il 20%
+          un led rosso avrebbe cominciato a lampeggiare. Il funzionamento del
+          nostro prodotto e’ mostrato nel video in background al mio sito.
+          Queste qui di seguito sono le slide che presentammo giovedi 11 che
+          mostrano le spefiche di Boxshore
+        </p>
+        <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="../images/arduino/prodotto2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../images/arduino/prodotto1.jpg" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <script>
+        var slideIndex = 1;
+          showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          slides[slideIndex-1].style.opacity = 1;
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+      </div>
+
+      <div class="hh">
+        <h2>Costi e ricavi</h2>
+      </div>
+
+      <div class="pp">
+        <p>
+          anche qui di seguito sono presenti le slide che avevamo fatto
+          tenere conto del costo di un singolo pezzo, del prezzo di vendita,
+          e dei rispettivi guadagni calcolati secondo vari profili temporali.
+        </p>
+        <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides1 fade">
+          <img src="../images/arduino/costi1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img src="../images/arduino/costi2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img src="../images/arduino/costi3.png" style="width:100%">
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <script>
+      var slideIndex = 1;
+        showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].style.opacity = 1;
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      </div>
+      <div class="hh">
+        <h2>Conclusione</h2>
+      </div>
+
+      <div class="pp" id="conclusione">
+        <p>
+          come ho gia’ scritto in precedenza ho trovato questo progetto
+           molto stimolante e formativo, infatti com’e’ successo anche
+           per gli altri progetti, abbiamo lavorato in team e
+           parlato in pubblico, attivita’ che non abbiamo opportunita’
+           di sperimentare molto spesso in classe, ma che riguardano delle
+           capacita’ fondamentali nel mondo del lavoro
+        </p>
+      </div>
+
     </div>
+    <footer>
+      <a href="#social" id="tornaSu">^</a>
+    </footer>
   </div>
 </body>
 </html>
