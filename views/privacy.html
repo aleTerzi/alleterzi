@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Alternanza | Privacy</title>
+  <link rel='stylesheet' href="../stylesheets/style.css">
+  <link rel='stylesheet' href="../stylesheets/articoli.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("#tornaSu").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $("#social").offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  <style media="screen">
+    .div1  {
+      background-image: url("../images/security.jpg");
+      position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="div1" id="d1">
+    <div class="bar">
+      <div class="fixedMenu">
+        <ul id="menu">
+          <li id="back">
+            <a href="../index.html"><h1> &lt </h1></a>
+          </li>
+          <li>
+            <a href="#"><h1 id="titolo">PROGETTO PRIVACY</h1></a>
+          </li>
+          <li id="img">
+            <a href="http://pascal.gov.it/"><img src="../images/shell.png" width="30px"></a>
+          </li>
+        </ul>
+      </div>
+
+      <hr>
+      <ul id="social">
+
+        <li>
+          <a href="https://twitter.com/terzi333">
+            <img src="../images/twitter.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_alleterzi_/">
+            <img src="../images/insta.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aleTerzi/"><img src="../images/Git_icon.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://github.com/aleTerzi/"><img src="../images/Git_icon.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <div class="intro">
+      <div class="hh">
+        <h2>Introduzione</h2>
+      </div>
+
+        <p>
+          il secondo progetto svolto riguardava la privacy e le politiche delle
+          aziende riguardo al trattamento dei dati sensibili, in particolare e’
+          stato messo il focus sulla nuova normativa europea che uscira’ a maggio(GDPR).
+          Il progetto e’ stato presentato da Roberto Ghinolfi, socio di
+          <a href="https://www.privacylab.it/" target="_blank">PrivacyLab</a>
+          ,e consisteva nel simulare una consulenza di auditing, in cui il consulente
+          verificava le policy delle aziende riguardanti i dati sensibili.
+          Eravamo divisi in 4 grandi gruppi. All’interno del gruppo poi si divideva
+          un’altro gruppo di persone che avrebbe fatto l’agenzia di auditing mentre
+          le restanti avrebbero rappresentato l’azienda.
+          Il 16 gennaio, al termine del progetto si doveva esporre una relazione
+          scritta dalla compagnia di auditing riguardante la policy delle azienda
+          ascoltata.
+
+        </p>
+
+      <div class="hh">
+        <h2>Il nostro team</h2>
+      </div>
+
+      <div class="pp">
+        <p>
+          io ero in gruppo con 8 persone della mia classe, e io rappresentavo
+          il vertice dell’azienda che faceva uso dei dati sensibili,l’azienda
+          che rappresentavo l’avevamo chiamata CC Data s.r.l, abbiamo cosi’
+          esposto le nostre politiche all’agenzia di auditing che ha redatto
+          una relazione abbastanza positiva, qui di seguito e' presente il link
+          per scaricarla:
+          <a href="../articoli/privacy/Policy Privacy and Personal Data.odt" download>download relazione</a>
+        </p>
+      </div>
+
+      <div class="hh">
+        <h2>La Presentazione</h2>
+      </div>
+
+      <div class="pp">
+        <p>
+          abbiamo presentato come secondo gruppo, io personalmente ero colui
+          che rispondeva a tutte le domande rivoltemi dalla compagnia di
+          consulenza, queste di seguito sono le slide riguardanti le nostre
+          politiche e la relazione. Le tematiche trattate erano queste :
+          Condizione cookies, Trattamento dei dati e Gestione pagamenti
+        </p>
+
+      </div>
+
+      <div class="hh">
+        <h2>Conclusione</h2>
+      </div>
+
+      <div class="pp" id="conclusione">
+        <p>
+          l’ho trovato un progetto a parere mio molto utile,
+          soprattutto perche’ non ero a conoscenza di un lavoro
+          simile, e di quanto fossero meticolose le politiche delle aziende
+          riguardo all’uso dei dati degli utenti
+        </p>
+      </div>
+
+    </div>
+    <footer>
+      <a href="#social" id="tornaSu">^</a>
+    </footer>
+  </div>
+</body>
+</html>
