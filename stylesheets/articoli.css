@@ -110,7 +110,7 @@ hr {
 }
 
 .intro {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   text-align: justify;
 }
@@ -120,6 +120,7 @@ hr {
   font-family: 'Handlee', cursive;
   color: white;
   font-size: 30px;
+  clear: left;
 }
 .intro p {
   margin: auto;
@@ -127,6 +128,8 @@ hr {
   color: white;
   font-size: 23px;
   margin: 20px 0px;
+  clear: left;
+  line-height: 34px;
 }
 
 .intro p a{
@@ -134,9 +137,18 @@ hr {
   color: #8a97f7;
 }
 
+.immagini {
+  width: 52%;
+  margin-top: 10px;
+  float: left;
+  padding-right:20px;
+  padding-right:20px;
+}
+
 .intro p a:hover {
   text-decoration: underline;
 }
+
 
 #conclusione p{
   margin-bottom: 0;
@@ -314,7 +326,5 @@ footer #tornaSu {
     text-align: center;
     font-size:50px;
   }
-  .intro p {
-    font-size: 90%;
-  }
+
 }
