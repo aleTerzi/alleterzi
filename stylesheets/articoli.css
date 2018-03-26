@@ -134,7 +134,7 @@ hr {
 
 .intro p a{
   text-decoration: none;
-  color: #8a97f7;
+  color:#e82566;
 }
 
 .immagini {
@@ -325,6 +325,9 @@ footer #tornaSu {
   .intro h2 {
     text-align: center;
     font-size:50px;
+  }
+  .immagini {
+    width: 80%;
   }
 
 }

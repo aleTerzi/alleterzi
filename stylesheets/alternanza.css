@@ -156,6 +156,31 @@ body {
 
 #menuResponsive ul{list-style: none}
 
+footer {
+  margin-top: 100px;
+  background-color: #fafafa;
+  height: 100px;
+
+}
+
+footer p, footer h3 {
+  margin: 0;
+}
+
+footer p {
+  padding-top: 20px;
+}
+#email {
+
+  text-align: center;
+  color:#666;
+}
+
+.subtitleFooter {
+  width: 1000px;
+  margin: auto;
+  color: #666;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -207,6 +232,17 @@ body {
       color: white;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
+    }
+    .subtitle {
+      width: 95%;
+    }
+    footer {
+      height: auto;
+    }
+
+    .subtitleFooter {
+      width: 90%;
+      text-align: center;
     }
 
 }

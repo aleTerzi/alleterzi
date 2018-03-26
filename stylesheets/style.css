@@ -133,6 +133,20 @@ body {
 	background-color: #db0404;
 }
 
+.subtitle {
+  padding-top:50px;
+  width: 1000px;
+  margin: auto;
+  font-size: 25px;
+
+}
+
+.subtitle p {
+  text-align: center;
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
   .main{
@@ -177,4 +191,6 @@ body {
   a#alternanza {
     width: 10%;
   }
+
+  
 }
